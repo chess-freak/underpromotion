@@ -139,24 +139,6 @@ li.blog-tag > a {
     border-bottom: 4px dotted var(--secondary-color);
 }
 
-
-.post .left,
-.portfolio .left {
-    float: left;
-    padding: 0 25px;
-    width: calc(50% - 50px);
-    margin: 0 auto;
-}
-
-.post .right,
-.portfolio .right {
-    float: right;
-    padding: 0 25px;
-    padding-bottom: 75px;
-    width: calc(50% - 50px);
-    margin: 0 auto;
-}
-
 .btn-social {
     display: inline-flex;
     align-items: center;
