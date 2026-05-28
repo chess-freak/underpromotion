@@ -1,7 +1,7 @@
-Promotion Theme
+Underpromotion Theme
 =========================
 
-게임 개발자를 위한 Jekyll 기반의 포트폴리오 블로그 테마입니다.
+개발자를 위한 Jekyll 기반의 포트폴리오 블로그 테마입니다.
 **Soft UI / Glassmorphism** 스타일의 현대적인 디자인과 프로젝트 전시에 최적화된 기능을 제공합니다.
 
 ## ✨ 주요 특징
@@ -50,7 +50,7 @@ social:                          # 프로젝트 관련 링크들
 ```
 
 ## Demo
-View this jekyll theme in action [here](https://chess-freak.github.io/promotion/)
+View this jekyll theme in action [here](https://chess-freak.github.io/underpromotion/)
 
 <!--
 ## Screenshot
