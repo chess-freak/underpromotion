@@ -15,6 +15,14 @@ Underpromotion Theme
 - Ruby 3.2.2 이상
 - Bundler & Jekyll
 
+### Bundler 오류가 날 때
+`bundler ~> 2.0` 제약 때문에 최신 Bundler(예: 4.x)에서 설치가 막히면, 이 저장소는 Bundler 2.x 이상에서 동작하도록 설정되어 있습니다. 그래도 로컬 환경이 꼬여 있다면 아래처럼 실행하면 됩니다.
+
+```bash
+gem install bundler -v 2.7.2
+bundle _2.7.2_ install
+```
+
 ### 설치 및 실행
 1. 저장소를 클론합니다.
 2. 의존성 라이브러리를 설치합니다:
