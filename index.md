@@ -1,12 +1,13 @@
 ---
 layout: default
+blog_preview_limit: 4
 navigation:
   - name: "소개"
     link: "#about"
   - name: "작업물"
     link: "#portfolio"
-  - name: "활동"
-    link: "#activities"
+  - name: "블로그"
+    link: "#blog"
   - name: "연락"
     link: "#contact"
 ---
@@ -55,6 +56,19 @@ navigation:
   <div class="container">
     <h2 class="section-title">기타 작업물</h2>
     {% include works.html exclude_tags=main_tags %}
+  </div>
+</section>
+
+<section id="blog" class="section">
+  <div class="container">
+    <h2 class="section-title">블로그</h2>
+    <p class="blog-home-description text-center">
+      포트폴리오에 담기 어려운 메모, 회고, 아이디어, 작은 실험들을 자유롭게 담습니다.
+    </p>
+    {% include blog_list.html limit=page.blog_preview_limit %}
+    <div class="blog-home-more">
+      <a class="blog-home-more-link" href="{{ '/blog/' | relative_url }}">더보기</a>
+    </div>
   </div>
 </section>
 

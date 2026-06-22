@@ -1,13 +1,28 @@
+{% assign blog_posts = site.posts | where_exp: "item", "item.tags contains 'blog'" %}
+{% assign preview_limit = include.limit %}
+
 <div class="blog-post-list">
-  {% assign blog_posts = site.posts | where_exp: "item", "item.tags contains 'blog'" %}
   {% if blog_posts.size > 0 %}
-    {% for post in blog_posts %}
-      <a href="{{ post.url | relative_url }}" class="blog-post-item">
-        <span class="blog-post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
-        <span class="blog-post-title">{{ post.title }}</span>
+    {% if preview_limit %}
+      {% assign visible_posts = blog_posts | slice: 0, preview_limit %}
+    {% else %}
+      {% assign visible_posts = blog_posts %}
+    {% endif %}
+    {% for post in visible_posts %}
+      <a href="{{ post.url | relative_url }}" class="blog-post-item blog-post-item--compact">
+        <div class="blog-post-item-meta">
+          <span class="blog-post-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+          {% if post.tags %}
+          <span class="blog-post-tags">{{ post.tags | join: " · " }}</span>
+          {% endif %}
+        </div>
+        <div class="blog-post-item-body">
+          <span class="blog-post-title">{{ post.title }}</span>
+          <span class="blog-post-excerpt">{{ post.excerpt | strip_html | truncate: 90 }}</span>
+        </div>
       </a>
     {% endfor %}
   {% else %}
-    <p class="text-center" style="color: var(--text-secondary);">아직 게시된 포스팅이 없습니다.</p>
+    <p class="text-center" style="color: var(--text-muted);">아직 게시된 포스팅이 없습니다.</p>
   {% endif %}
 </div>

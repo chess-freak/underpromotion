@@ -11,7 +11,7 @@
     </div>
 
     <div class="navbar-menu-visible" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav style="flex: 1; padding-left: 50px">
+      <ul class="nav navbar-nav" style="flex: 1; padding-left: 50px">
         {% assign nav_items = page.navigation | default: site.data.navigation %}
         {% for item in nav_items %}
         {% comment %} 현재 페이지가 홈페이지인지, 링크가 내부 앵커인지 판별 {% endcomment %}
