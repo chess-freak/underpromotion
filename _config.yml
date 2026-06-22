@@ -45,14 +45,6 @@ credits: 'Developed by Chess Freak'
 markdown: kramdown
 permalink: /:categories/:title
 
-#for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-      values:
-      permalink: ""
-
 # Plugins
 plugins:
   - jekyll-seo-tag

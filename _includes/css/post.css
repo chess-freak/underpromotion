@@ -1,79 +1,3 @@
-.post,
-.portfolio {
-    margin: auto;
-    max-width: 800px;
-}
-
-.post p,
-.portfolio p {
-    margin-bottom: 20px;
-    word-break: keep-all;
-    font-size: 16px;
-}
-
-.post img,
-.portfolio p {
-    width: 100%;
-
-}
-
-.post h1,
-.portfolio h1 {
-    text-align: center;
-}
-
-.post h1::after,
-.portfolio h1::after {
-    margin: 10px auto 0;
-}
-
-.post object,
-.portfolio object {
-    display: block;
-    margin-left: 50%;
-    margin-bottom: 20px;
-    transform: translateX(-50%);
-}
-
-.post iframe,
-.portfolio iframe {
-    display: block;
-    margin-left: 50%;
-    margin-bottom: 20px;
-    transform: translateX(-50%);
-}
-
-.post ul,
-.portfolio ul {
-    font-size: 16px;
-    list-style-type: square;
-    list-style-position: inside;
-}
-
-.post li>ul,
-.portfolio li>ul {
-    margin-left: 20px;
-}
-
-.post ul>li::marker,
-.portfolio ul>li::marker {
-    content: "\f005\00a0\00a0";
-    font-family: 'FontAwesome';
-    font-size: 12px;
-
-}
-
-.post ul>li>ul>li::marker,
-.portfolio ul>li>ul>li::marker {
-    content: "\f192\00a0\00a0"
-}
-
-.post h1,
-.portfolio h1 {
-    font-size: 32px;
-    margin: 10px 0;
-}
-
 .post h1:before,
 .post h2:before,
 .post h3:before {
@@ -100,22 +24,8 @@
 
 }
 
-.post h2,
-.portfolio h2 {
-    margin-bottom: 25px;
-    font-size: 19px;
-}
-
 .post h2 {
     margin-top: 50px;
-}
-
-.post h3,
-.portfolio h3 {
-    margin: 10px 0;
-    margin-top: 25px;
-    font-size: 19px;
-    text-align: left;
 }
 
 .post h2::before,

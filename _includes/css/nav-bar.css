@@ -14,11 +14,6 @@
     object-fit: cover;
 }
 
-.navbar-header {
-    position: relative; /* 가상 요소 배치를 위한 기준점 */
-    z-index: 10; /* 메뉴보다 위에 오도록 설정 */
-}
-
 .navbar {
     background-color: rgba(30, 41, 59, 0.95) !important;
     backdrop-filter: blur(10px);
@@ -31,7 +26,6 @@
 
 .navbar .navbar-nav {
     letter-spacing: 0.5px;
-    /* 메뉴 리스트 양끝에 마스크 적용 */
     -webkit-mask-image: linear-gradient(to right, transparent, black 30px, black calc(100% - 30px), transparent);
     mask-image: linear-gradient(to right, transparent, black 30px, black calc(100% - 30px), transparent);
 }
@@ -54,7 +48,7 @@
     padding-bottom: 0;
     padding-left: 15px !important;
     padding-right: 15px !important;
-    min-width: 80px; /* nav 메뉴의 최소 크기를 지정하여 안정감 부여 */
+    min-width: 80px;
     text-align: center;
 }
 
@@ -64,10 +58,9 @@
     width: 0px;
     height: 3px;
     background-color: var(--primary-color);
-    margin: 10px auto 0; /* 좌측 정렬된 타이틀과 일관성 유지 */
+    margin: 10px auto 0;
     padding: 0;
     transition: width 0.3s ease;
-    
 }
 
 .nav li a:hover {
@@ -143,34 +136,6 @@
     border-top: 0;
     border-bottom: 4px solid;
     content: ""
-}
-
-.navbar-menu-visible {
-    align-items: center;
-    overflow-x: auto;
-    display: flex;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-.navbar-menu-visible::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
-}
-
-.nav {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    overflow-x: auto;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-.nav::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
 }
 
 .nav>li {

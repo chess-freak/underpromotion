@@ -207,31 +207,3 @@ li.blog-tag > a {
     font-size: 1.1rem;
     margin-left: 1rem;
 }
-/* Modern Flex Grid Overrides */
-/*
-.portfolio-flex-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 1rem 0;
-}
-
-.portfolio-item {
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: var(--transition-smooth);
-  backdrop-filter: blur(10px);
-}
-
-.portfolio-item:hover {
-  transform: translateY(-10px);
-  border-color: var(--accent-color);
-  box-shadow: var(--shadow-lg);
-}
-
-.portfolio-txt {
-  padding: 1.5rem;
-  font-weight: 600;
-}*/
